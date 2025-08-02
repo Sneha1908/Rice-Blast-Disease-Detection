@@ -10,6 +10,12 @@ An AI-powered deep learning system for **early detection and stage-wise classifi
 
 The system improves accuracy and reduces delays in disease management by replacing manual inspection with automated image-based analysis.
 
+> 📢 **In collaboration with**:  
+> [Tamil Nadu Agricultural University (TNAU), Coimbatore](https://tnau.ac.in)
+
+> 📊 **Dataset Source**:  
+> Rice leaf images were collected with support from **TNAU - Department of Plant Pathology**, under expert guidance for stage-wise annotation of rice blast disease.
+
 ---
 
 ## ✨ Key Features
