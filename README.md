@@ -194,7 +194,14 @@ All result screenshots are available in the `/Results/` folder of this repositor
 - Real-time Disease Detection on Phone  
   ![Mobile App](Results/Mobile%20App%20Results.png)
 
+---
 
+## 👤 Author
+
+**Sneha S**  
+Final Year B.E. Computer Science and Engineering  
+Coimbatore Institute of Technology  
+GitHub: [@Sneha1908](https://github.com/Sneha1908)
 
 
 
