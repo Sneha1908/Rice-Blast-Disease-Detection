@@ -106,14 +106,19 @@ venv\Scripts\activate
 ```bash
 pip install -r requirements.txt
 ```
-### 4. Download Model Files
-Download the trained models from models.zip file from the Releases page and extract it into the models/ folder.
 
-   - Included models:
-     - rice_leaf_classifier_model_final.keras
-     - best.pt
-     - RealESRGAN_x4plus.pth
-       
+## 4. Download Trained Models
+
+All required models are available in the [GitHub Releases](https://github.com/Sneha1908/Rice-Blast-Disease-Detection/releases/tag/v1.0) section.
+
+| Model File                          | Purpose                                     | Download Link |
+|------------------------------------|---------------------------------------------|---------------|
+| `best.zip`                         | YOLOv5n model for stage-wise detection      | [Download](https://github.com/Sneha1908/Rice-Blast-Disease-Detection/releases/download/v1.0/best.zip) |
+| `rice_leaf_classifier_model_final.zip` | EfficientNetB0 classifier for leaf validation | [Download](https://github.com/Sneha1908/Rice-Blast-Disease-Detection/releases/download/v1.0/rice_leaf_classifier_model_final.zip) |
+| `RealESRGAN_x4plus.zip`            | Enhanced Super-resolution Generative Adversial Network Model (ESRGAN enhancer)    | [Download](https://github.com/Sneha1908/Rice-Blast-Disease-Detection/releases/download/v1.0/RealESRGAN_x4plus.zip) |
+
+> 📁 After downloading, extract all `.zip` files into a folder named `models/` in your project directory before running the app.
+ 
 ### 5. Run the Flask Backend
 ```bash
 python app.py
@@ -134,74 +139,60 @@ Run:
 ```bash
 flutter run
 ```
-
 ---
 
 ## 📷 Results
 
-All resukt screenshots are available in the `/results/` folder of this repository.
+All result screenshots are available in the `/Results/` folder of this repository.
 
----
-
-### 🏗️ System Architecture
+###  System Architecture
 
 - System Design Overview  
-  ![System Design](screenshots/System Design.png)
+  ![System Design](Results/System%20Design.png)
 
 - Architecture Flow  
-  ![System Architecture](screenshots/System Architecture.png)
+  ![System Architecture](Results/System%20Architecture.png)
 
----
+###  Model Training & Evaluation (EfficientNetB0)
 
-### 🧠 Model Training & Evaluation
-
-- EfficientNetB0: Accuracy & Loss  
-  ![Accuracy Loss](screenshots/EfficientNetB0 - Accuracy nd Loss Graph.png)
+- Accuracy and Loss Plot  
+  ![Accuracy & Loss](Results/EfficientNetB0%20-%20Accuracy%20nd%20Loss%20Graph.png)
 
 - Classification Report  
-  ![Classification Report](screenshots/EfficientNetB0 - Classification Report.png)
+  ![Classification Report](Results/EfficientNetB0%20-%20Classification%20Report.png.jpg)
 
 - Confusion Matrix  
-  ![Confusion Matrix](screenshots/EfficientNetB0 - Confusion Matrix.png)
+  ![Confusion Matrix](Results/EfficientNetB0%20-%20Confusion%20Matrix.png.jpg)
 
-- Prediction Samples  
-  ![Prediction](screenshots/EfficientNetB0 - Prediction Results.png)
+- Sample Predictions  
+  ![Prediction Results](Results/EfficientNetB0%20-%20Prediction%20Results.png.jpg)
 
----
+###  Image Enhancement (ESRGAN)
 
-### 🖼️ Image Enhancement (ESRGAN)
+- Enhanced vs. Original  
+  ![ESRGAN Results](Results/Image%20Enhancement%20-%20ESRGAN%20Results.png)
 
-- Before and After Comparison  
-  ![Enhancement](screenshots/Image Enhancement - ESRGAN Results.png)
+###  Disease Detection with YOLOv5n
 
----
+- YOLO Evaluation Graphs  
+  ![YOLO Graphs](Results/YOLOv5n%20-%20Evaluation%20Graphs.png)
 
-### 🎯 YOLOv5n Detection
-
-- Evaluation Graphs  
-  ![YOLO Graphs](screenshots/YOLOv5n - Evaluation Graphs.png)
-
-- Evaluation Metrics Table  
-  ![Metrics Table](screenshots/YOLOv5n - Evaluation Metrics.png)
+- YOLO Evaluation Metrics  
+  ![YOLO Metrics](Results/YOLOv5n%20-%20Evaluation%20Metrics.png)
 
 - Precision-Recall Curve  
-  ![PR Curve](screenshots/YOLOv5n - Precision Recall Curve.png)
+  ![YOLO PR Curve](Results/YOLOv5n%20-%20Precision%20Recall%20Curve.png)
 
-- Prediction Result Samples  
-  ![YOLO Prediction 1](screenshots/YOLOv5n - Prediction Result 1.png)  
-  ![YOLO Prediction 2](screenshots/YOLOv5n - Prediction Result 2.png)
+- Prediction Output Sample 1  
+  ![YOLO Result 1](Results/YOLOv5n%20-%20Prediction%20Result%201.png.jpg)
 
----
+- Prediction Output Sample 2  
+  ![YOLO Result 2](Results/YOLOv5n%20-%20Prediction%20Result%202.png.jpg)
 
-### 📱 Mobile App (Flutter)
+###  Flutter Mobile App UI
 
-- App UI and Results View  
-  ![App UI](screenshots/Mobile App Results.png)
-
-
-
-
-
+- Real-time Disease Detection on Phone  
+  ![Mobile App](Results/Mobile%20App%20Results.png)
 
 
 
